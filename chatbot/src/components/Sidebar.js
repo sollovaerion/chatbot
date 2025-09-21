@@ -12,26 +12,26 @@ const Sidebar = ({
     <aside className="sidebar">
       <div className="sidebar-content">
         <div className="description">
-          <p>Smart FAQ chatbot with advanced matching algorithms. Click categories or questions to get started.</p>
+          <p>Asistenti virtual i Infra Project me algoritme të avancuara për përputhjen e pyetjeve. Klikoni kategori ose pyetje për të filluar.</p>
         </div>
         
         <div className="stats-grid">
           <div className="stat-box">
             <div className="stat-number">{stats.total}</div>
-            <div className="stat-label">Total Q&As</div>
+            <div className="stat-label">Pyetje & Përgjigje</div>
           </div>
           <div className="stat-box">
             <div className="stat-number">{stats.categories}</div>
-            <div className="stat-label">Categories</div>
+            <div className="stat-label">Kategoritë</div>
           </div>
           <div className="stat-box">
             <div className="stat-number">{stats.accuracy}%</div>
-            <div className="stat-label">Accuracy</div>
+            <div className="stat-label">Saktësia</div>
           </div>
         </div>
 
         <div className="section">
-          <h3 className="section-title">Categories</h3>
+          <h3 className="section-title">Kategoritë</h3>
           <div className="categories">
             {categories.map(([category, count]) => (
               <div 
@@ -49,7 +49,7 @@ const Sidebar = ({
         </div>
 
         <div className="section">
-          <h3 className="section-title">Popular Questions</h3>
+          <h3 className="section-title">Pyetje të Popullarizuara</h3>
           <div className="top-questions">
             {topQuestions.map((question, index) => (
               <button 

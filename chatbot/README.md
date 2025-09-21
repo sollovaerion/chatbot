@@ -1,70 +1,138 @@
-# Getting Started with Create React App
+# Infra Project - Website i Nderrmarrjes Ndertimore
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ky është website-u zyrtar i Infra Project, një ndërmarrje ndertimore profesionale në Shqipëri.
 
-## Available Scripts
+## Përshkrimi
 
-In the project directory, you can run:
+Infra Project ofron një gamë të gjerë shërbimesh ndertimore:
 
-### `npm start`
+- **Nderrmarrje Ndertimore** - Ndërtim objektesh të ndryshme
+- **Asfaltim** - Asfaltim rrugësh dhe parkingjesh
+- **Prejtim** - Prejtim dhe përgatitje terreni
+- **Menaxhim Projektesh** - Menaxhim profesional i projekteve
+- **Konstruksion Metalik** - Struktura metalike dhe çeliku
+- **Renovim** - Renovim dhe modernizim objektesh
+- **Fusha Sportive** - Ndërtim fushash sportive
+- **Punimi dhe Finalizimi** - Punime të detajuara
+- **Punime Suvatimi** - Suvatim mbrojtës dhe dekorativ
+- **Instalime Ndertimore** - Instalime elektrike, hidraulike, etj.
+- **Demolim Objektesh** - Demolim i sigurt dhe profesional
+- **Ndërtim Palestrave** - Palestra dhe qendra sportive
+- **Tregtia me Shumice** - Metale dhe minerale
+- **Furnizim Paisje** - Paisje për objekte shtëpirore
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Karakteristikat e Website-it
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🏠 Faqet Kryesore
+- **Kryefaqja** - Prezantimi i ndërmarrjes dhe shërbimeve kryesore
+- **Shërbimet** - Lista e plotë e shërbimeve të ofruara
+- **Rreth Nesh** - Historia, vlerat dhe ekipi i ndërmarrjes
+- **Kontakto** - Informacionet e kontaktit dhe forma për komunikim
 
-### `npm test`
+### 🤖 Asistenti Virtual
+- **Chatbot i Integruar** - Asistent virtual për pyetje rreth shërbimeve
+- **FAQ në Shqip** - Pyetje dhe përgjigje të shpeshta në gjuhën shqipe
+- **Kërkimi Inteligjent** - Gjetje e përgjigjeve bazuar në pyetjet e përdoruesit
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🎨 Dizajni dhe Përdorimi
+- **Dizajn Modern** - Interface i pastër dhe profesional
+- **Responsive** - Optimizuar për të gjitha pajisjet (desktop, tablet, mobile)
+- **Gjuha Shqipe** - Plotësisht në gjuhën shqipe
+- **Aksesueshmëri** - I optimizuar për përdoruesit me nevoja të veçanta
 
-### `npm run build`
+## Teknologjitë e Përdorura
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React 19** - Framework kryesor për zhvillimin e frontend-it
+- **React Router DOM** - Navigimi midis faqeve
+- **CSS3** - Stilizimi dhe dizajni
+- **JavaScript ES6+** - Logjika e aplikacionit
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instalimi dhe Ekzekutimi
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Kërkesat
+- Node.js (version 14 ose më i ri)
+- npm ose yarn
 
-### `npm run eject`
+### Hapat e Instalimit
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Kloni ose shkarkoni projektin**
+   ```bash
+   cd infra-project-website
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Instaloni varësitë**
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Ekzekutoni në mënyrën e zhvillimit**
+   ```bash
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Hapni në shfletuesin**
+   ```
+   http://localhost:3000
+   ```
 
-## Learn More
+### Komanda të Tjera
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+# Për të krijuar versionin e prodhimit
+npm run build
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Për të ekzekutuar testet
+npm test
 
-### Code Splitting
+# Për të analizuar kodin
+npm run eject
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Struktura e Projektit
 
-### Analyzing the Bundle Size
+```
+src/
+├── components/          # Komponentët e ri-përdorshëm
+│   ├── Navigation.js    # Navigimi kryesor
+│   ├── Header.js        # Header i chatbot-it
+│   ├── Sidebar.js       # Sidebar i chatbot-it
+│   ├── ChatArea.js      # Zona e bisedës
+│   ├── ChatInput.js     # Input për mesazhe
+│   └── Message.js       # Komponenti i mesazheve
+├── pages/              # Faqet kryesore të website-it
+│   ├── Home.js         # Kryefaqja
+│   ├── Services.js     # Faqja e shërbimeve
+│   ├── About.js        # Faqja "Rreth nesh"
+│   ├── Contact.js      # Faqja e kontaktit
+│   └── Chatbot.js      # Faqja e chatbot-it
+├── data/               # Të dhënat dhe konfigurimet
+│   └── infraProjectFaq.js  # FAQ dhe logjika e chatbot-it
+└── App.js              # Komponenti kryesor
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Personalizimi
 
-### Making a Progressive Web App
+### Shtimi i Shërbimeve të Reja
+Redaktoni skedarin `src/pages/Services.js` dhe shtoni shërbimet e reja në array-in `services`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Përditësimi i FAQ-it
+Redaktoni skedarin `src/data/infraProjectFaq.js` për të shtuar pyetje dhe përgjigje të reja.
 
-### Advanced Configuration
+### Ndryshimi i Informacioneve të Kontaktit
+Redaktoni skedarin `src/pages/Contact.js` për të përditësuar informacionet e kontaktit.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Mbështetja
 
-### Deployment
+Për çdo pyetje ose problem, ju lutemi kontaktoni:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Email**: info@infraproject.al
+- **Telefon**: +355 4 123 4567
+- **Adresa**: Rr. Dëshmorët e Kombit, Nr. 15, Tiranë, Shqipëri
 
-### `npm run build` fails to minify
+## Licenca
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ky projekt është zhvilluar për Infra Project dhe është pronë e tyre.
+
+---
+
+**Infra Project** - Partneri Juaj i Besuar në Ndërtim 🏗️

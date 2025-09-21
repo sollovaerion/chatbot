@@ -1,16 +1,29 @@
 :root {
-  --bg: #0b0f19;
-  --panel: #0e1526;
-  --muted: #aeb4c1;
-  --text: #e6e8ee;
-  --accent: #6aa9ff;
-  --accent-2: #58d1b7;
-  --card: #0f1422;
-  --chip: #162036;
-  --border: #1b2340;
-  --success: #10b981;
-  --warning: #f59e0b;
-  --error: #ef4444;
+  --bg: #ffffff;
+  --panel: #f5f6f7;
+  --muted: #6c757d;
+  --text: #2c3e50;
+  --accent: #1a3c62;
+  --accent-2: #14405a;
+  --accent-light: #2a5a8a;
+  --accent-dark: #0f2a42;
+  --card: #ffffff;
+  --chip: #ecf0f1;
+  --border: #bdc3c7;
+  --success: #27ae60;
+  --warning: #f39c12;
+  --error: #e74c3c;
+  --secondary: #2c5aa0;
+  --secondary-light: #4a7bc8;
+  --secondary-dark: #1e4080;
+  --tertiary: #8e44ad;
+  --tertiary-light: #a569bd;
+  --tertiary-dark: #6c3483;
+  --construction-blue: #1a3c62;
+  --construction-gray: #7f8c8d;
+  --main-color: #1a3c62;
+  --main-light: #2a5a8a;
+  --main-dark: #0f2a42;
 }
 
 * {
@@ -19,8 +32,10 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
-  background: linear-gradient(180deg, #0b0f19 0%, #0b0f19 45%, #0c1324 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background: #ffffff;
   color: var(--text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -29,27 +44,6 @@ body {
 
 #root {
   min-height: 100vh;
-}
-
-.app {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.layout {
-  display: grid;
-  grid-template-columns: 360px 1fr;
-  flex: 1;
-  min-height: calc(100vh - 80px);
-}
-
-.main-content {
-  padding: 24px 24px 0 24px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  position: relative;
 }
 
 /* Utility classes */
@@ -62,34 +56,23 @@ body {
   overflow: hidden;
 }
 
-/* Responsive design */
-@media (max-width: 1200px) {
-  .layout {
-    grid-template-columns: 320px 1fr;
-  }
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-@media (max-width: 1024px) {
-  .layout {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-  }
-  
-  .main-content {
-    padding: 20px 20px 0 20px;
-  }
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
 }
 
-@media (max-width: 768px) {
-  .main-content {
-    padding: 16px 16px 0 16px;
-  }
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
 }
 
-@media (max-width: 480px) {
-  .main-content {
-    padding: 12px 12px 0 12px;
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
 }
 
 
