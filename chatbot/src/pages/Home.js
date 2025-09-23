@@ -14,7 +14,7 @@ const Home = () => {
           </p>
           <div className="hero-buttons">
             <a href="#services" className="btn btn-primary">Shërbimet Tona</a>
-            <a href="#contact" className="btn btn-secondary">Kontakto</a>
+            <a href="/contact" className="btn btn-secondary">Kontakto</a>
           </div>
         </div>
       </section>

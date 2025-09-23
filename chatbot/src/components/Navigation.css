@@ -12,9 +12,15 @@
 }
 
 .nav-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.nav-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,11 +31,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: white;
-  font-weight: 800;
   transition: transform 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .nav-logo:hover {
@@ -57,24 +59,32 @@
   box-shadow: 0 4px 12px rgba(26, 60, 98, 0.3);
 }
 
-.logo-text {
+.nav-text {
   display: flex;
-  flex-direction: column;
-  line-height: 1.2;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logo-main {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
+  font-weight: 800;
   color: white;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  white-space: nowrap;
 }
 
 .logo-sub {
-  font-size: 0.75rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
   color: #bdc3c7;
   font-weight: 400;
   text-transform: none;
   letter-spacing: 0.5px;
+  white-space: nowrap;
 }
 
 .nav-menu {
@@ -86,14 +96,17 @@
 .nav-link {
   text-decoration: none;
   color: white;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 25px;
   transition: all 0.3s ease;
   position: relative;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   border: 2px solid transparent;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -186,6 +199,20 @@
   
   .nav-toggle {
     display: flex;
+  }
+
+  .nav-text {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.8rem 0;
+  }
+
+  .logo-main {
+    font-size: 1.2rem;
+  }
+
+  .logo-sub {
+    font-size: 0.8rem;
   }
   
   .nav-toggle.active .hamburger:nth-child(1) {
